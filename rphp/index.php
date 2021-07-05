@@ -119,6 +119,13 @@ function sem($a, $b){
     echo $a + $b;
 }
 
-sem()
 
+
+echo "<br>";
+echo "<br>";
+
+
+$list = ["ali" =>13, "rez" => 0, "mar"=> 16];
+sort($list);
+var_dump($list);
 ?>
