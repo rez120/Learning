@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+body {
+  height: 200vh;
+  /* background-image: linear-gradient(to bottom right, rgb(180, 173, 173), grey); */
+}
+
+.container {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, black, rgb(65, 64, 64));
+  color: white;
+}
+
+.navbar {
+  max-width: 1160px;
+  align-items: center;
+  /* background-color: cornflowerblue; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.6s;
+  flex-wrap: wrap;
+}
+
+.header-right-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  /* background-color: orange; */
+
+  margin: 5px 20px 5px 0px;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.header-image {
+  width: 70px;
+  height: 70px;
+}
+.logo-disappear {
+  opacity: 0;
+}
+
+.header-title {
+  font-size: 24px;
+}
+
+.header-meta {
+  margin: 5px 20px 5px 0px;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: purple; */
+  overflow: hidden;
+  transition: 0.4s linear;
+  align-self: stretch;
+}
+
+.item {
+  /* background-color: yellow; */
+  padding: 5px 12px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bar {
+  width: 0px;
+  height: 3px;
+
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+.bar-mouseover {
+  background-color: gold;
+  width: 100%;
+}
+.navbar2 {
+  background-color: greenyellow;
+  height: 20px;
+}
+
+.list2 {
+  transform: translateX(100%);
+
+  opacity: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.header-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.header-field {
+  border: none;
+  border-radius: 8px;
+  width: 200px;
+  margin-right: 4px;
+  font-size: 16px;
+  height: 36px;
+}
+
+.header-button {
+  border: none;
+  font-size: 16px;
+  background-color: gold;
+  color: gray;
+  font-weight: bold;
+  padding: 0px 18px;
+  height: 36px;
+  border-radius: 8px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.header-button:hover {
+  background-color: grey;
+  color: white;
+}
