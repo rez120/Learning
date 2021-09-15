@@ -1,0 +1,12 @@
+{
+    "name": "reza/composer",
+    "description": "testing",
+    "type": "project",
+    "authors": [
+        {
+            "name": "rez120",
+            "email": "r.pishkar121@gmail.com"
+        }
+    ],
+    "require": {}
+}
