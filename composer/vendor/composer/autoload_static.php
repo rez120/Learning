@@ -8,7 +8,6 @@ class ComposerStaticInit58c73c90001c70d05bfbbbe4fd393c88
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-        '2df68f9e79c919e2d88506611769ed2e' => __DIR__ . '/..' . '/respect/stringifier/src/stringify.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -19,7 +18,6 @@ class ComposerStaticInit58c73c90001c70d05bfbbbe4fd393c88
         'R' => 
         array (
             'Respect\\Validation\\' => 19,
-            'Respect\\Stringifier\\' => 20,
         ),
     );
 
@@ -31,10 +29,6 @@ class ComposerStaticInit58c73c90001c70d05bfbbbe4fd393c88
         'Respect\\Validation\\' => 
         array (
             0 => __DIR__ . '/..' . '/respect/validation/library',
-        ),
-        'Respect\\Stringifier\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/respect/stringifier/src',
         ),
     );
 

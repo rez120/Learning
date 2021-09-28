@@ -9,6 +9,6 @@
         }
     ],
     "require": {
-        "respect/validation": "^2.2"
+        "respect/validation": "1.1.31"
     }
 }
