@@ -1,13 +1,11 @@
-<?php 
+<?php
+
 
 
 class Validator{
-    protected $val;
-    public function __construct($val){
-        $this->val = $val;
-    }
+    public static function validate( $val){
 
-    public function validate(){
-        return trim(htmlspecialchars($this->val));
+        return htmlspecialchars(trim($val));
+        
     }
 }

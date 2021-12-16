@@ -10,7 +10,7 @@ require_once './components/header.php' ;
 <a href="./index.php">index</a>
 
 
-<form action="./auth/login.php" method="POST">
+<form action="./controllers/loginController.php" method="POST">
     <input name="email" type="email" placeholder="email">
     <input name="password" type="password" placeholder="password">
     <input name="submit" type="submit">
