@@ -39,9 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core.apps.CoreConfig',
     'rest_framework',
-    'rest_framework.authtoken',
-    'drf_spectacular',
-    'user.apps.UserConfig',
+    'rest_framework.authtoken', #for auth of drf obviously
+    'drf_spectacular', #swagger api docs etc ...
+    'user.apps.UserConfig', 
 ]
 
 MIDDLEWARE = [
