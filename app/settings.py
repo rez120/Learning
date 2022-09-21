@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken', #for auth of drf obviously
     'drf_spectacular', #swagger api docs etc ...
     'user.apps.UserConfig', 
+    'recipe.apps.RecipeConfig',
 ]
 
 MIDDLEWARE = [
