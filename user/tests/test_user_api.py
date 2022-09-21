@@ -141,10 +141,10 @@ class PrivateUserApiTest(TestCase):
         
     def test_update_user_profile(self):
         payload = {'name': 'Updated name', 'password': 'newpassword123'}
-        
+        payload = {'name': 'Updated name', 'password': 'newpassword123'}
         res = self.client.patch(ME_URL,payload)
         
-        self.user.refresh_from_db()
+        self.user.refresh_from_db() # not working i guess
         self.assertEqual(self.user.name, payload['name'])
         self.assertTrue(self.user.check_password(payload['password']))
         self.assertEqual(res.status_code,status.HTTP_200_OK)
