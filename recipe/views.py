@@ -29,7 +29,8 @@ class RecipeViewSet(viewsets.ModelViewSet):
 
 
 
-class TagViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
+# put mixins before generic viewsets
+class TagViewSet(mixins.UpdateModelMixin, mixins.ListModelMixin, viewsets.GenericViewSet):
     serializer_class =  serializers.TagSerializer
     queryset = Tag.objects.all()
     authentication_classes  = [TokenAuthentication]
@@ -39,6 +40,8 @@ class TagViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
     # we overwrite the prev one to list only auth user's tags, in default it lists them all
     def get_queryset(self):
         return self.queryset.filter(user = self.request.user).order_by('-name')
+    
+
     
     
     
