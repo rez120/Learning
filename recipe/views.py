@@ -30,7 +30,11 @@ class RecipeViewSet(viewsets.ModelViewSet):
 
 
 # put mixins before generic viewsets
-class TagViewSet(mixins.UpdateModelMixin, mixins.ListModelMixin, viewsets.GenericViewSet):
+class TagViewSet(
+                mixins.DestroyModelMixin,
+                mixins.UpdateModelMixin, 
+                mixins.ListModelMixin, 
+                viewsets.GenericViewSet):
     serializer_class =  serializers.TagSerializer
     queryset = Tag.objects.all()
     authentication_classes  = [TokenAuthentication]
