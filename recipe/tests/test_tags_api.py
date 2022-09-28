@@ -32,8 +32,9 @@ class PrivateTagsApiTests(TestCase):
     
     def setUp(self):
         self.user = create_user()
-        self.cleint = APIClient()
+        self.client = APIClient()
         self.client.force_authenticate(self.user)
+        
         
     def test_retrieve_tags(self):
         Tag.objects.create(user = self.user, name = 'vegan')
