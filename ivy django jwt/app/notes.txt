@@ -1,0 +1,3 @@
+jwt.io // for decoding access token
+
+u can add custom fields and customize token, but why?
