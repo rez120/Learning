@@ -8,7 +8,6 @@ from rest_framework_simplejwt.views import TokenObtainPairView
 
 
 from .serializers import NoteSerializer
-
 from base.models import Note
 
 class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
